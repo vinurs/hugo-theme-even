@@ -1,0 +1,37 @@
+.post-famoussayings{
+    border-style: outset;
+    border-width: 2px;
+
+    border-radius:25px;
+    border-color: red rgb(25%,35%,45%) #909090 red;
+    box-shadow: 10px 10px 5px #888888;
+    padding: 10px;
+
+    .famoussayings-conten {
+	margin: 0px;
+	margin-top: 20px;
+        color:green;
+        font-size: 20px;
+    }
+
+    .famoussayings-author {
+        color: red;
+        font-size: 25px;
+        font-weight:bold;
+        text-align:center;
+    }
+
+    .vinurs-mp-ad {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .vinurs-mp-account {
+        color: red;
+        font-size: 25px;
+        font-weight:bold;
+        text-align:center;
+    }
+
+}
