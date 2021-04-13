@@ -13,6 +13,15 @@
   </title>
   {{ partial "head.html" . }}
 </head>
+<script type="text/javascript">
+	function addaTarget(id) {
+		var aTags = document.getElementById(id).getElementsByTagName("a");
+		for (i = 0; i < aTags.length; i++) {
+		var aTags_item = aTags[i];
+		aTags_item.target = "_blank";
+    }
+}
+</script>
 <body>
   {{ partial "slideout.html" . }}
   <div class="container" id="mobile-panel">
@@ -29,6 +38,10 @@
         </div>
         {{ partial "comments.html" . }}
       </div>
+      //给 <a> 标签批量加上 tartget = "_blank"
+      <script type="text/javascript">
+	  addaTarget("post-content-id");
+      </script>
     </main>
 
     {{ if not .Params.hideHeaderAndFooter -}}
